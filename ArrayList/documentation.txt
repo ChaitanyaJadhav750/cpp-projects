@@ -1,0 +1,32 @@
+Methods:
+T is any primitive data type like int,char,float and double
+1.     bool add(T element); //append element at end
+2.     bool add(int index, T element); //add element at index
+3.     bool addAll(T elements[], int length); //append whole array of element to list, length is number of elements in the array
+4.     bool addAll(int index, T elements[], int length); //add whole array of element to list at index, length is number of elements in the array
+5.     void clear(); //delete all elements from list
+6.     bool contains(T element); //return true if element is present in the list
+7.     T get(int index); //return element present at index
+8.     int indexOf(T element); //return index of element present in the list
+9.     bool isEmpty(); //return true if list is empty
+10.    bool set(int index, T new_element); //replace old_element at index with new_element
+11.    int size(); //return length of list
+12.    void display(); //print all elements of list
+13.    void remove(int index); //remove element present at index
+
+Example:
+#include "ArrayList.h"
+
+int main() {
+    ArrayList<int> arrayList;
+    
+    arrayList.add(2);
+    arrayList.add(5);
+    
+    int a[] = {1,2,3,45};
+    arrayList.addAll(1,a,4);
+    
+    arrayList.set(4,46);
+    arrayList.display();
+    return 0;
+}
